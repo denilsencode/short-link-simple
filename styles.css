@@ -1,0 +1,126 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px; /* Lebar maksimum diperbesar */
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px; /* Ukuran gambar diperbesar */
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.username {
+  font-size: 32px; /* Ukuran font diperbesar */
+  margin: 0;
+}
+
+.bio {
+  font-size: 18px; /* Ukuran font diperbesar */
+  color: #666;
+  margin: 15px 0 25px;
+}
+
+.links .link {
+  display: block;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px; /* Padding diperbesar */
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 18px; /* Ukuran font diperbesar */
+  transition: background-color 0.3s ease;
+}
+
+.links .link:hover {
+  background-color: #005bb5;
+}
+
+.footer {
+  margin-top: 25px;
+  font-size: 14px; /* Ukuran font diperbesar */
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+    max-width: 500px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .username {
+    font-size: 28px;
+  }
+
+  .bio {
+    font-size: 16px;
+  }
+
+  .links .link {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 24px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+
+  .links .link {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
